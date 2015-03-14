@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+    
+<select name="hotels">
+    {% for hotel in hotels %}
+    	<option value="hotel">{{hotel.name}}</option>
+    {% endfor %}
+</select>
+
+<select name="restaurants">
+    {% for restaurant in restaurants %}
+    	<option value="restaurant">{{restaurant.name}}</option>
+    {% endfor %}
+</select>
+
+<select name="thingtodos">
+    {% for thingtodo in thingtodos %}
+    	<option value="thingtodo">{{thingtodo.name}}</option>
+    {% endfor %}
+</select>
+
+{% endblock %}
