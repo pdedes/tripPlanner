@@ -1,5 +1,40 @@
-@import "normalize";
 
-body {
-	background-color: "blue"
+.navbar {
+	ul {
+		float:left;
+		list-style-type: none;
+	}
+
+	
+	li {
+		float:left;
+		vertical-align: middle;
+	}
+}
+
+.col-md-8 {
+	height: 1000px;
+	background-color: #eee;
+}
+
+.col-md-4 {
+	background-color: #999;
+
+	li {
+		float:left;
+		list-style-type: none;
+	}
+
+}
+
+.day-buttons {
+	background-color: #aaa;
+}
+
+.itinerary {
+	background-color: #b2b2b2;
+
+	li {
+		float:none;
+	}
 }

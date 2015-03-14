@@ -1,25 +1,60 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <p>Welcome to {{title}}</p>
-    
-<select name="hotels">
-    {% for hotel in hotels %}
-    	<option value="hotel">{{hotel.name}}</option>
-    {% endfor %}
-</select>
 
-<select name="restaurants">
-    {% for restaurant in restaurants %}
-    	<option value="restaurant">{{restaurant.name}}</option>
-    {% endfor %}
-</select>
+    <nav class="navbar navbar-default">
+    	<div class="container-fluid">
+    		<div class="navbar-header">
+    			<a class="navbar-brand" href="#">Trip Planner</a>
+		    	<ul class="nav nav-pills">
+		    		<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Profile</a></li>
+					<li role="presentation"><a href="#">Messages</a></li>
+		    	</ul>
+		    </div>
+	    </div>
+    </nav>
 
-<select name="thingtodos">
-    {% for thingtodo in thingtodos %}
-    	<option value="thingtodo">{{thingtodo.name}}</option>
-    {% endfor %}
-</select>
+    <!-- All floating happens within the same row -->
+    <div class="row">
+    	<div class="col-md-8">"Map Section Here"</div>
+  		<div class="col-md-4">
+			<select name="hotels">
+			    {% for hotel in hotels %}
+			    	<option value="hotel">{{hotel.name}}</option>
+			    {% endfor %}
+			</select>
+
+			<select name="restaurants">
+			    {% for restaurant in restaurants %}
+			    	<option value="restaurant">{{restaurant.name}}</option>
+			    {% endfor %}
+			</select>
+
+			<select name="thingtodos">
+			    {% for thingtodo in thingtodos %}
+			    	<option value="thingtodo">{{thingtodo.name}}</option>
+			    {% endfor %}
+			</select>
+  		</div>
+  		<div class="col-md-4 day-buttons">
+			<h3>Day</h3>
+			<ul>
+				<li><a class="btn btn-default" href="#" role="button">Link1</a></li>
+				<li><a class="btn btn-default" href="#" role="button">Link2</a></li>
+				<li><a class="btn btn-default" href="#" role="button">Link3</a></li>
+				<li><a class="btn btn-default" href="#" role="button">Link4</a></li>
+			</ul>
+  		</div>
+  		<div class="col-md-4 itinerary">
+			<h5>Itinerary</h5>
+			<ul>
+				<li>My Hotel</li>
+				<li>My Restaurants</li>
+				<li>My Things To Do</li>
+			</ul>
+  		</div>
+    </div>
+
 
 {% endblock %}
