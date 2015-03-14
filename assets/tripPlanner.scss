@@ -5,12 +5,28 @@
 		list-style-type: none;
 	}
 
-	
 	li {
+
+/*		display: block;
+		height: 50px;*/
 		float:left;
 		vertical-align: middle;
+
+/*		a {
+			height: 50px;
+		}*/
+
 	}
+
+	.nav-pills{
+		margin-top: 5px;
+		/*height: 50px;*/
+		/*padding: 0px 15px 0px 15px;*/
+	}
+
 }
+
+
 
 .col-md-8 {
 	height: 1000px;

@@ -2,14 +2,14 @@
 
 {% block content %}
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
     	<div class="container-fluid">
     		<div class="navbar-header">
     			<a class="navbar-brand" href="#">Trip Planner</a>
 		    	<ul class="nav nav-pills">
 		    		<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
+					<li role="presentation"><a href="#">About</a></li>
+					<li role="presentation"><a href="#">Contact</a></li>
 		    	</ul>
 		    </div>
 	    </div>
@@ -17,7 +17,7 @@
 
     <!-- All floating happens within the same row -->
     <div class="row">
-    	<div class="col-md-8">"Map Section Here"</div>
+    	<div class="col-md-8 map">"Map Section Here"</div>
   		<div class="col-md-4">
 			<select name="hotels">
 			    {% for hotel in hotels %}
